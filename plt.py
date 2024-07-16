@@ -3,8 +3,9 @@ import numpy as np
 
 x = np.linspace(-5,5,100)
 y = x**3
-plt.plot(x,y)
-plt.title("Función en python")
+plt.plot(x,y, "g.-", label ="$x^3$", linewidth = 5)
+plt.title("Función cúbica")
+plt.legend()
 plt.grid()
 plt.show()
 
